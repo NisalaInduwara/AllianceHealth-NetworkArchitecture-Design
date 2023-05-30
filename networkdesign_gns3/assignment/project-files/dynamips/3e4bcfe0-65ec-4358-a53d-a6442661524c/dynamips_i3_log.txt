@@ -1,0 +1,55 @@
+Apr 12 18:15:29.058 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 12 18:15:29.060 HYPERVISOR: Started on IP = localhost, TCP port = 53891.
+Apr 12 18:15:29.544 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 12 18:15:29.545 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\NisalaInduwara\OneDrive\Desktop\freelancing\work3\assignment\project-files\dynamips 
+Apr 12 18:15:29.545 GENERAL: working_dir=C:\Users\NisalaInduwara\OneDrive\Desktop\freelancing\work3\assignment\project-files\dynamips
+Apr 12 18:15:29.546 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\NisalaInduwara\OneDrive\Desktop\freelancing\work3\assignment\project-files\dynamips\3e4bcfe0-65ec-4358-a53d-a6442661524c 
+Apr 12 18:15:29.547 GENERAL: working_dir=C:\Users\NisalaInduwara\OneDrive\Desktop\freelancing\work3\assignment\project-files\dynamips\3e4bcfe0-65ec-4358-a53d-a6442661524c
+Apr 12 18:15:29.548 HYPERVISOR: exec_cmd: vm create ESW1 3 c3600 
+Apr 12 18:15:29.551 VM: VM ESW1 created.
+Apr 12 18:15:29.565 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5018 
+Apr 12 18:15:29.565 HYPERVISOR: exec_cmd: c3600 get_mac_addr ESW1 
+Apr 12 18:15:29.566 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+Apr 12 18:15:29.567 HYPERVISOR: exec_cmd: vm set_exec_area ESW1 64 
+Apr 12 18:15:29.568 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Apr 12 18:15:29.569 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x605f2458 
+Apr 12 18:15:29.571 HYPERVISOR: exec_cmd: vm set_ios ESW1 C:/Users/NisalaInduwara/GNS3/images/IOS/c3640-ik9o3s-mz.124-25b.image 
+Apr 12 18:15:29.572 HYPERVISOR: exec_cmd: c3600 set_mac_addr ESW1 cc03.2748.0000 
+Apr 12 18:15:29.573 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+Apr 12 18:15:29.574 HYPERVISOR: exec_cmd: vm set_ram ESW1 192 
+Apr 12 18:15:29.575 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Apr 12 18:15:29.575 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 0 0 NM-1FE-TX 
+Apr 12 18:15:29.576 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Apr 12 18:15:29.577 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
+Apr 12 18:15:37.436 HYPERVISOR: exec_cmd: nio create_udp udp-5ec37b94-8e44-4ab6-b0aa-4d08b244592b 10014 127.0.0.1 10015 
+Apr 12 18:15:37.703 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 0 0 udp-5ec37b94-8e44-4ab6-b0aa-4d08b244592b 
+Apr 12 18:15:37.705 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Apr 12 18:15:37.802 HYPERVISOR: exec_cmd: nio create_udp udp-05343042-c418-4ef6-8503-6f14a927fbb9 10018 127.0.0.1 10019 
+Apr 12 18:15:37.804 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 0 udp-05343042-c418-4ef6-8503-6f14a927fbb9 
+Apr 12 18:15:37.805 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Apr 12 18:15:37.919 HYPERVISOR: exec_cmd: nio create_udp udp-e1cf431f-3767-4a50-8930-0a17422e423b 10022 127.0.0.1 10023 
+Apr 12 18:15:37.922 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 1 udp-e1cf431f-3767-4a50-8930-0a17422e423b 
+Apr 12 18:15:37.923 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Apr 12 18:15:38.025 HYPERVISOR: exec_cmd: nio create_udp udp-11a95028-f8da-4bb9-a5ce-fb77cc1239f2 10026 127.0.0.1 10027 
+Apr 12 18:15:38.027 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 2 udp-11a95028-f8da-4bb9-a5ce-fb77cc1239f2 
+Apr 12 18:15:38.028 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Apr 12 18:18:35.788 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Apr 12 18:18:35.790 VM: VM Ghost created.
+Apr 12 18:18:35.790 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/NisalaInduwara/GNS3/images/IOS/c3640-ik9o3s-mz.124-25b.image 
+Apr 12 18:18:35.791 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Apr 12 18:18:35.791 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\NisalaInduwara\OneDrive\Desktop\freelancing\work3\assignment\project-files\dynamips\c3640-ik9o3s-mz.124-25b.image-192.ghost 
+Apr 12 18:18:35.791 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Apr 12 18:18:35.792 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 12 18:18:35.828 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Apr 12 18:18:35.829 HYPERVISOR: exec_cmd: vm start Ghost 
+Apr 12 18:18:36.246 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Apr 12 18:18:36.248 HYPERVISOR: exec_cmd: vm stop Ghost 
+Apr 12 18:18:36.328 VM: VM Ghost shutdown.
+Apr 12 18:18:36.329 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Apr 12 18:18:36.331 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Apr 12 18:18:36.331 VM: VM Ghost destroyed.
+Apr 12 18:18:36.363 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
+Apr 12 18:18:36.364 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 C:\Users\NisalaInduwara\OneDrive\Desktop\freelancing\work3\assignment\project-files\dynamips\c3640-ik9o3s-mz.124-25b.image-192.ghost 
+Apr 12 18:18:36.364 HYPERVISOR: exec_cmd: vm get_status ESW1 
+Apr 12 18:18:36.370 HYPERVISOR: exec_cmd: vm set_config ESW1 configs\i3_startup-config.cfg 
+Apr 12 18:18:36.371 HYPERVISOR: exec_cmd: vm start ESW1 
